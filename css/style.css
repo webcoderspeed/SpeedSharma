@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .col-1, .container .col-2 {
+  width: 50%;
+  height: 100%;
+}
+
+.intro-section {
+  background: #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .intro-section .col-1, .intro-section .col-2 {
+    width: 100%;
+  }
+  .intro-section .col-1 {
+    padding: 25px !important;
+  }
+}
+
+.intro-section .col-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  gap: 25px;
+}
+
+.intro-section .col-1 h1, .intro-section .col-1 p {
+  color: #2A3D66;
+}
+
+.intro-section .col-1 h1 {
+  font-size: 5.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section .col-1 h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro-section .col-1 h1 {
+    font-size: 3rem;
+  }
+}
+
+.intro-section .col-1 p {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section .col-1 p {
+    font-size: 1.5rem;
+  }
+}
+
+.intro-section .col-1 .btn-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .intro-section .col-1 .btn-group {
+    flex-direction: column;
+  }
+}
+
+.intro-section .col-1 .btn-group .view-btn, .intro-section .col-1 .btn-group .download-btn {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid #3667A6;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section .col-1 .btn-group .view-btn, .intro-section .col-1 .btn-group .download-btn {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro-section .col-1 .btn-group .view-btn, .intro-section .col-1 .btn-group .download-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    width: 300px;
+  }
+}
+
+.intro-section .col-1 .btn-group .view-btn {
+  color: #3667A6;
+}
+
+.intro-section .col-1 .btn-group .view-btn:hover {
+  background: #3667A6;
+  color: #fff;
+}
+
+.intro-section .col-1 .btn-group .download-btn {
+  background: #3667A6;
+  color: #fff;
+}
+
+.intro-section .col-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.creative-section {
+  display: flex;
+  justify-content: space-around;
+  background: #2A3D66;
+  padding: 100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .creative-section {
+    flex-direction: column;
+    padding: 25px !important;
+  }
+  .creative-section .col-1, .creative-section .col-2 {
+    width: 100%;
+  }
+}
+
+.creative-section .col-1, .creative-section .col-2 {
+  padding: 25px !important;
+  color: #fff;
+}
+
+.creative-section .col-1 {
+  font-size: 2rem;
+  padding: 10px !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .creative-section .col-1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .creative-section .col-1 {
+    font-size: 1.2rem;
+  }
+}
+
+.creative-section .col-2 {
+  font-size: 0.9rem;
+  line-height: 24px;
+  padding: 10px !important;
+}
+
+.creative-section .col-2 .read-more {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 2px solid;
+  width: 200px;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .creative-section .col-2 .read-more {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creative-section .col-2 {
+    line-height: 35px;
+    font-size: 1rem;
+  }
+}
+
+.work-experience {
+  display: flex;
+  background: #3667A6;
+  padding: 100px;
+  color: #fff;
+  gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-experience {
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+  }
+  .work-experience .col-1, .work-experience .col-2 {
+    width: 100%;
+  }
+}
+
+.work-experience .col-1 h1 {
+  font-size: 4rem;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-experience .col-1 h1 {
+    font-size: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work-experience .col-1 h1 {
+    font-size: 2rem;
+  }
+}
+
+.work-experience .col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-experience .col-2 {
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work-experience .col-2 h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work-experience .col-2 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.work-experience .col-2 .work {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-experience .col-2 .work:not(:last-child) {
+  padding-bottom: 35px;
+  border-bottom: 2px solid;
+}
+
+.skills {
+  padding: 100px 50px;
+  background: #2A3D66;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    padding: 25px;
+  }
+}
+
+.skills p {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills p {
+    font-size: 2rem;
+  }
+}
+
+.skills .skill {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 2rem;
+  width: 70%;
+  margin: 15px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .skills .skill {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills .skill {
+    font-size: 1rem;
+  }
+}
+
+.skills .skill-name {
+  margin-right: 10%;
+  width: 250px;
+}
+
+.skills .progress-meter {
+  position: relative;
+  background: #fff;
+  height: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .skills .progress-meter {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.skills .progress-meter .progress {
+  width: 80%;
+  height: 20px;
+  background: #3667A6;
+}
+
+.skills ul > li:nth-child(1) .progress {
+  width: 90%;
+}
+
+.skills ul > li:nth-child(2) .progress {
+  width: 90%;
+}
+
+.skills ul > li:nth-child(3) .progress {
+  width: 90%;
+}
+
+.skills ul > li:nth-child(4) .progress {
+  width: 80%;
+}
+
+.skills ul > li:nth-child(5) .progress {
+  width: 80%;
+}
+
+.skills ul > li:nth-child(6) .progress {
+  width: 70%;
+}
+
+.skills ul > li:nth-child(7) .progress {
+  width: 70%;
+}
+
+.skills ul > li:nth-child(8) .progress {
+  width: 50%;
+}
+
+.skills ul > li:nth-child(9) .progress {
+  width: 50%;
+}
+
+.skills span {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills span {
+    font-size: 1.2rem;
+  }
+}
+
+.projects {
+  width: 100%;
+  padding: 50px;
+}
+
+.projects > p {
+  text-align: center;
+  font-size: 4rem;
+  color: #2A3D66;
+  width: 100%;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .projects > p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects > p {
+    font-size: 2rem;
+  }
+}
+
+.projects section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 80px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .projects section {
+    gap: 45px;
+  }
+}
+
+.projects section .project {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .projects section .project {
+    width: 100%;
+  }
+}
+
+.projects section .project .project-image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.projects section .project .project-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.projects section .project .project-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.projects section .project .project-info .project-name {
+  font-size: 1.5rem;
+  color: #2A3D66;
+}
+
+.projects section .project .project-info .project-description {
+  color: gray;
+}
+
+.instagram-profile {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #3667A6;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .instagram-profile {
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+
+.instagram-profile .instagram-handle h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 25px;
+  width: 200px;
+}
+
+.instagram-profile .instagram-handle a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.instagram-profile .instagram-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 240px));
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .instagram-profile .instagram-data {
+    margin-top: 25px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instagram-profile .instagram-data {
+    grid-template-columns: repeat(auto-fit, 90px);
+  }
+}
+
+.instagram-profile .instagram-data img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: #2A3D66;
+  color: #fff;
+  gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .footer .col-1, .footer .col-2 {
+    width: 100%;
+  }
+}
+
+.footer .col-1 h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .col-1 h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .col-1 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.footer .col-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.4rem;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .col-2 ul {
+    margin-left: 0;
+  }
+}
+
+.footer .col-2 ul .fa {
+  margin-right: 15px;
+}
+
+.footer .col-2 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .col-2 ul .footer-links {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .col-2 ul {
+    align-items: flex-start;
+  }
+}

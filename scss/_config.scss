@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+// colors
+$primary-color:#fff;
+$secondary-color:#E5E5E5;
+$very-dark-blue:#2A3D66;
+$light-blue: #3667A6;
+
+// hiding scrollbar
+::-webkit-scrollbar {
+  display: none;
+}
