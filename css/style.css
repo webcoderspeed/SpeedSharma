@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 480px) {
   .intro-section .col-1 {
-    gap: 50px;
+    gap: 4rem;
   }
 }
 
@@ -96,7 +96,7 @@
 @media screen and (max-width: 480px) {
   .intro-section .col-1 .btn-group {
     flex-direction: column;
-    gap: 35px;
+    gap: 2.8rem;
   }
 }
 
@@ -429,7 +429,7 @@
   font-size: 4rem;
   color: #2A3D66;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 3.5rem;
   font-weight: bold;
 }
 
@@ -449,7 +449,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 7rem;
   width: 100%;
 }
 
@@ -477,7 +477,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.5rem;
 }
 
 .projects section .project .project-info .project-name {
@@ -492,7 +492,7 @@
 .instagram-profile {
   padding: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   background: #3667A6;
   color: #fff;
@@ -503,6 +503,10 @@
     flex-direction: column;
     padding: 25px;
   }
+}
+
+.instagram-profile .instagram-handle {
+  flex: 0.4;
 }
 
 .instagram-profile .instagram-handle h1 {
@@ -519,31 +523,37 @@
 }
 
 .instagram-profile .instagram-data {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 240px));
-  gap: 15px;
-  align-items: center;
+  margin-top: 2rem;
+  display: flex;
   justify-content: center;
-  flex: 0.8;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  flex: 0.6;
+}
+
+.instagram-profile .instagram-data .instagram-box {
+  height: 300px;
+  width: 300px;
 }
 
 @media screen and (max-width: 768px) {
-  .instagram-profile .instagram-data {
-    margin-top: 25px;
-    grid-template-columns: repeat(auto-fit, 200px);
-    width: 100%;
+  .instagram-profile .instagram-data .instagram-box {
+    width: 200px;
+    height: 200px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .instagram-profile .instagram-data {
-    grid-template-columns: repeat(auto-fit, 90px);
+  .instagram-profile .instagram-data .instagram-box {
+    width: 120px;
+    height: 120px;
   }
 }
 
 .instagram-profile .instagram-data img {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .footer {
@@ -567,13 +577,9 @@
   }
 }
 
-.footer .col-1 {
-  margin-bottom: 5%;
-}
-
 .footer .col-1 h1 {
   font-size: 3.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -591,9 +597,9 @@
 .footer .col-2 ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
   font-size: 1.4rem;
-  margin-left: 50px;
+  margin-left: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -603,7 +609,7 @@
 }
 
 .footer .col-2 ul .fa {
-  margin-right: 15px;
+  margin-right: 0.9rem;
 }
 
 .footer .col-2 ul li {
@@ -621,6 +627,6 @@
 @media screen and (max-width: 768px) {
   .footer .col-2 ul {
     align-items: flex-start;
-    gap: 35px;
+    gap: 2.5rem;
   }
 }
