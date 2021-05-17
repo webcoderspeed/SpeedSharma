@@ -230,6 +230,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin: 10px 0;
       }
 
       .work:not(:last-child){
@@ -418,6 +419,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  height: 100%;
   background: $light-blue;
   color: $primary-color;
 
